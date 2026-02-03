@@ -1,0 +1,127 @@
+body {
+  margin: 50px;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #19c244;
+  border-block: solid;
+  writing-mode: horizontal-tb;
+  display: flex;
+  justify-content: space-between;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: #19c244;
+  border-block: solid;
+  writing-mode: horizontal-tb;
+  display: flex;
+  justify-content: center;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #616462;
+}
+
+header h1 {
+  font-family: "Newsreader", serif;
+  font-size: 32;
+  color:rgb(41, 46, 40);
+}
+
+header img {
+  border-radius: 6px;
+  border: black;
+}
+
+.address {
+ font-style: italic;
+ font-size: 10;
+}
+
+.tagline {
+  font-size: 20px;
+}
+
+/************* Sections ********************/
+hr {
+  height: 8px;
+  color: black;
+}
+
+section h3 {
+  color: #38B56C;
+  font-family: "Newsreader", serif;
+}
+
+section dl {
+  display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+section ul {
+  list-style-type: square;
+}
+
+section a {
+  color:#616462;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: aqua;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+  display: block;
+}
+
+.card {
+  box-shadow: 0 5px 5px;
+  background-color: #9bd8aa;
+  border: 1px solid;
+  padding: 20px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+    flex-direction: column;
+    justify-content:center;
+    background-color: #19c244;
+    border-block: solid;
+    writing-mode: horizontal-tb;
+    display: flex;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-content:center;
+      display: grid;
+      gap: 10px;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  box-shadow: 0px 3px 3px;
+}
+
+textarea {
+   box-shadow: 0px 3px 3px;
+}
