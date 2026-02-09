@@ -59,7 +59,7 @@ section h3 {
 section dl {
   display: grid;
 	gap: 10px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 section ul {
