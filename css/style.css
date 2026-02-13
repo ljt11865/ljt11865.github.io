@@ -9,6 +9,8 @@ nav {
   writing-mode: horizontal-tb;
   display: flex;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /***********************  Footer Section   **************************/
@@ -18,22 +20,27 @@ footer {
   writing-mode: horizontal-tb;
   display: flex;
   justify-content: center;
+  margin-left: 15;
+  margin-right: 15;
 }
 
 /*********** Splash Page ************************/
 header {
-  background-color: #616462;
+  background-color: #80ac8e;
+  padding-left: 15px;
 }
 
 header h1 {
   font-family: "Newsreader", serif;
   font-size: 32;
-  color:rgb(41, 46, 40);
+  color:rgb(4, 4, 4);
+  padding-top: 5px;
 }
 
 header img {
   border-radius: 6px;
-  border: black;
+  border: soild;
+  border-color: black;
 }
 
 .address {
@@ -47,7 +54,6 @@ header img {
 
 /************* Sections ********************/
 hr {
-  height: 8px;
   color: black;
 }
 
@@ -56,14 +62,30 @@ section h3 {
   font-family: "Newsreader", serif;
 }
 
+section h2 {
+  padding-left: 80px;
+  background-color: #f4efe6; 
+}
+
 section dl {
   display: grid;
-	gap: 10px;
 	grid-template-columns: 1fr 1fr;
+  padding-left: 80px;
+  gap: 40px;
+}
+
+.contact-head {
+  background-color: #9bd8aa;
 }
 
 section ul {
   list-style-type: square;
+  padding-left: 100px;
+}
+
+.card ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
 section a {
@@ -75,11 +97,34 @@ section a:hover {
   color: aqua;
 }
 
+nav a:hover{
+  color:#dfdfba;
+  text-decoration: underline;
+}
+
+nav a{
+  color:#f8f8f8;
+  text-decoration: underline;
+}
+
+footer a:hover{
+  color:#dfdfba;
+  text-decoration: underline;
+}
+
+footer a{
+  color:#f8f9f9;
+  text-decoration: underline;
+}
+
+
+
 /**************   Projects   *****************/
 .three-col {
 	display: grid;
   gap: 10px;
 	grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
 }
 
 .card img {
@@ -102,6 +147,7 @@ section a:hover {
     border-block: solid;
     writing-mode: horizontal-tb;
     display: flex;
+    align-items: center;
     }
 
     .three-col {
@@ -109,6 +155,23 @@ section a:hover {
       justify-content:center;
       display: grid;
       gap: 10px;
+    }
+
+    section h2 {
+      padding-left: 40px;
+    }
+
+    section dl {
+      display: grid;
+	    gap: 10px;
+	    grid-template-columns: 1fr 1fr;
+      padding-left: 40px;
+      gap: 40px;
+    }
+
+    section ul {
+      list-style-type: square;
+      padding-left: 60px;  
     }
 }
 
